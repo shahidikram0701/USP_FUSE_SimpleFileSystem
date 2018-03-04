@@ -801,7 +801,7 @@ void print_inode(inode *i){
   			inode_map[(temp -> file_inode)] = 0;
   		}
   	}
-    printf("\n\nPersisting the directory deletion\n\n");
+    printf("\n\nPersisting the file deletion\n\n");
     lseek(fs_file, 0, SEEK_SET);
     write(fs_file, fs, FS_SIZE);
   	return 0;
